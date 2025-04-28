@@ -118,26 +118,27 @@ a:hover {
     background-color: #1f6391;
 }
 
-/* Estilo do carrossel */
+/* Estilo para o carrossel com transição suave */
 #carrossel {
     max-width: 600px;
     margin: 20px auto;
     position: relative;
+    overflow: hidden; /* Impede o conteúdo de vazar */
 }
 
 .depoimento {
-    display: none;
+    opacity: 0;
+    position: absolute;
+    width: 100%;
     text-align: center;
     font-style: italic;
-    opacity: 0;
-    transition: opacity 1s;
+    transition: opacity 1s ease-in-out; /* Aqui faz a suavidade */
 }
 
 .depoimento.ativo {
-    display: block;
     opacity: 1;
+    position: relative;
 }
-
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
@@ -161,5 +162,5 @@ a:hover {
 }
 
 .bolinha.ativa {
-    background-color: #03273f;
+    background-color: #2980B9;
 }
