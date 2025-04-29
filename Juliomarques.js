@@ -39,7 +39,7 @@ document.getElementById('formContato').addEventListener('submit', function(event
 
     window.location.href = mailtoLink;
 
-    // Mostra mensagem de confirmação
+    // Mostra que a mensagem foi enviada
     const confirmacao = document.createElement('p');
     confirmacao.textContent = "✅ Mensagem enviada ao destinatário!";
     confirmacao.style.color = "green";
@@ -51,7 +51,7 @@ document.getElementById('formContato').addEventListener('submit', function(event
 
     formulario.reset();
 
-    // Some a mensagem depois de 5 segundos
+    // faz a mensagem depois de 5 segundos
     setTimeout(() => {
         confirmacao.remove();
     }, 5000);
