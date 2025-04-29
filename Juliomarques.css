@@ -1,6 +1,4 @@
-
-
-/* Estilo geral */
+/* Estilo do curriculo em geral */
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
@@ -21,7 +19,7 @@ body {
     margin-bottom: 40px;
 }
 
-/* Estilo das seções */
+/* Estilo para as seções */
 section {
     background: white;
     margin: 20px 0;
@@ -72,7 +70,7 @@ a {
 }
 
 a:hover {
-    text-decoration: underline; /* Sublinha ao passar o mouse */
+    text-decoration: underline; /* Sublinha ao passar o mouse ou clicar */
 }
 
 
@@ -90,7 +88,7 @@ a:hover {
     }
 }
 
-/* Estilo do formulário */
+/* Estilo do formulário para contato*/
 #formContato {
     display: flex;
     flex-direction: column;
@@ -132,7 +130,7 @@ a:hover {
     width: 100%;
     text-align: center;
     font-style: italic;
-    transition: opacity 1s ease-in-out; /* Aqui faz a suavidade */
+    transition: opacity 1s ease-in-out; /* efeito de troca */
 }
 
 .depoimento.ativo {
